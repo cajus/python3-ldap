@@ -1,0 +1,6 @@
+python3-ldap (2.4.25.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Port to python3
+
+ -- Cajus Pollmeier <pollmeier@gonicus.de>  Tue, 09 Aug 2016 15:06:11 +0200

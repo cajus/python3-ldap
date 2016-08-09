@@ -1,0 +1,29 @@
+Source: python3-ldap
+Section: python
+Priority: optional
+Maintainer: Matej Vela <vela@debian.org>
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8), python3-all-dev (>= 2.6.6-3~), python3-all-dbg, libldap2-dev, libsasl2-dev
+Homepage: http://www.python-ldap.org/
+X-Python3-Version: >= 3.4
+
+Package: python3-ldap
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Provides: ${python:Provides}
+Suggests: python3-ldap-doc, python3-pyasn1
+Description: LDAP interface module for Python
+ This module provides a Python interface to the OpenLDAP client library
+ (LDAP is the Lightweight Directory Access Protocol).
+
+Package: python3-ldap-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: python3-ldap (= ${binary:Version}), python3-dbg, ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Provides: ${python:Provides}
+Description: LDAP interface module for Python (debug extension)
+ This module provides a Python interface to the OpenLDAP client library
+ (LDAP is the Lightweight Directory Access Protocol).
+ .
+ This package contains the extension built for the Python debug interpreter.

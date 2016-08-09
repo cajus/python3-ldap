@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=python3-ldap
+
+override_dh_strip:
+	dh_strip --dbg-package=python3-ldap-dbg
